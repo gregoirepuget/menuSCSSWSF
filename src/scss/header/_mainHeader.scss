@@ -1,0 +1,34 @@
+header#header {
+    nav {
+        background: $primaryColor;
+
+        ul {
+            display: flex;
+            margin: 0;
+            padding: 0;
+
+            li {
+                list-style: none;
+                position: relative;
+
+                a {
+                    color: white;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    font-size: 18px;
+                    padding: 10px 20px;
+                }
+
+                ul {
+                    display: none;
+                }
+
+                &:hover ul {
+                    display: block;
+                    position: absolute;
+                    background: $primaryColor;
+                }
+            }
+        }
+    }
+}
